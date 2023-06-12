@@ -14,9 +14,9 @@ class Web:
                 'xpath': '/html/body/section[3]/div/div[%VARIAVEL%]/div/h4'
             }
         }
-        options = webdriver.ChromeOptions()
+        options = webdriver.EdgeOptions()
         options.add_argument("--headless")
-        self.driver = webdriver.Chrome(options=options)
+        self.driver = webdriver.Edge(options=options)
         self.abrir_site()
         
     
